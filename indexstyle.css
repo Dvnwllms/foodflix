@@ -1,0 +1,73 @@
+#movies img, movie img, {
+    width: 100%;
+}
+
+@media(min-width: 960px) {
+#movies .col-md-3 .well {
+    height: 390px;
+    }
+
+#movies .col-md-3 img {
+    height: 240px;
+    }
+
+}
+
+#render {
+  position: relative;
+  z-index: 100;
+}
+
+.particles-js-canvas-el{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#homebtn {
+  position: absolute;
+  z-index: 100;
+  background-color: black;
+  border-color: black;
+  font-family: 'Monoton', cursive;
+
+}
+
+#userquery {
+  position: relative;
+  z-index: 100;
+  font-family: 'Ewert', cursive;
+}
+
+#imdb {
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+}
+
+.well h5 {
+  color: white;
+  font-size: large;
+
+}
+
+.btn {
+  position: relative;
+  z-index: 100;
+  font-size: large;
+}
+
+#foodbtn {
+  margin-left: 35%;
+  font-family: 'Monoton', cursive;
+}
+
+.well {
+  background-color: transparent;
+  font-size: large;
+}
+
+#searchText {
+  font-size: large;
+}

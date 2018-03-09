@@ -1,15 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-
 html {
   height: 100%;
   overflow: hidden;
 }
-
 body {
   margin:0;
   padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
+    perspective: 1px;
+    transform-style: preserve-3d;
   height: 50%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -22,11 +20,9 @@ body {
    min-height: 100vh;
    flex-direction: column;
  }
-
  main {
    flex: 1 0 auto;
  }
-
 h1 {
    font-size: 250%
 }
@@ -35,7 +31,11 @@ p {
   line-height: 150%;
   color: #333; */
 }
-
+.div {
+    height: 200px;
+    width: 100%;
+    background-color: orange;
+}
 .slide {
   position: relative;
   /* padding: 25vh 10%; */
@@ -43,9 +43,8 @@ p {
   width: 100vw;
   box-sizing: border-box;
   /* box-shadow: 0 -1px 10px rgba(0, 0, 0, .7); */
-	/* transform-style: inherit; */
+    /* transform-style: inherit; */
 }
-
 /* img {
   position: absolute;
   top: 50%;
@@ -58,11 +57,17 @@ p {
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 } */
-
-img:last-of-type {
+/* img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+} */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 200px;
+    /* background-color: powderblue; */
 }
-
 .slide:before {
   content: "";
   position: absolute;
@@ -72,7 +77,6 @@ img:last-of-type {
   right: 0; */
   /* box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);  */
  }
-
 .title {
   width: 50%;
   padding: 3%;
@@ -80,42 +84,39 @@ img:last-of-type {
    /* background: rgba(240,230,220, .7);
    box-shadow: 0 0 8px rgba(0, 0, 0, .7); */
  }
-
 .slide:nth-child(2n) .title {
   margin-left: 0;
   margin-right: auto;
 }
-
 .slide:nth-child(2n+1) .title {
   margin-left: auto;
   margin-right: 0;
 }
-
 .slide, .slide:before {
   background: 50% 50% / cover;
 }
-
-/* .header {
+.header {
   text-align: center;
-  font-size: 175%;
+  /* font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
-  height: 80px;
-} */
-
+  height: 20px; */
+  /* background-image: url("images/nodots.png"); */
+}
 /* #title {
-  background-image: url("images/pleasework.jpg");
-  height: 200px;
+  background-image: url("images/logo.png");
   z-index:2;
-} */
-
+  margin: 20px;
+  height: -20px; */
+}
 #title h1 {
  transform: translateZ(.25px) scale(.75);
  transform-origin: 50% 100%;
  /* background-image: url("images/nodots.png"); */
-
 }
-
+/* .slide-header {
+  background-image: url("images/nodots.png");
+} */
 #slide1 {
   /* background-image: url("images/netflix.jpg");
   transform: translateZ(-1px) scale(2);
@@ -124,16 +125,22 @@ img:last-of-type {
   background-image: url("images/netflix.jpg");
   transform: translateZ(-1px) scale(2);
   opacity : 0.2;
-  height: 350%;
+  height: 550%;
 }
-
 #slide2 {
   background-image: url("images/netflix-chill.jpg");
   z-index:2;
   opacity : 2;
   max-width: 100%;
-   height: 175%;
+   height: 950%;
+   color: white;
+   text-shadow: 2px 2px black;
   /* height: 250px; */
+}
+
+#slide2 p {
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 #slide3:before {
@@ -143,22 +150,23 @@ img:last-of-type {
   background-image: url("images/netflix.jpg");
   transform: translateZ(-1px) scale(2);
   opacity : 0.2;
-  height: 400%;
+  height: 750%;
   /* height: 70px; */
 }
-
 /* #slide4 {
   height: 10px;
   background: #222; */
   /* height: 50px; */
-
-
 }
-
 /* .footer.page-footer {
   position:absolute;
   bottom:0;
   width:100%;
   height:60px;   /* Height of the footer */
   /* background-color:black;
+} */
+/* #container {
+    border-style: solid;
+    border-color: red;
+    image: url ("images/youtube.png");
 } */
