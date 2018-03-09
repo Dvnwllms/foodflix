@@ -6,6 +6,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
  
 app.use(express.static('./app/public'));
+app.use(express.static('./../audio'));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
